@@ -85,21 +85,19 @@ header span {
 
 .header_link_gallery button{
     width: 100px;
-    color: snow;
+    color: #1e2a1a;
     text-decoration: none;
-    background: linear-gradient(
-        35deg,
-      #0a8c7a,
-      #1dbf9e
-    );
+    background: rgba(255, 255, 255, 0.554);
+    backdrop-filter: blur(4px);
     padding: 5px 30px;
     margin: 10px;
-    border-radius: 5px;
+    border-radius: 7px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 600;
     width: fit-content;
     border: none;
     cursor: pointer;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.291);
     transition: all 0.3s ease;
 
 }
@@ -107,6 +105,23 @@ header span {
 .header_link_gallery button:hover {
     transform: scale(1.05);
 }
+
+.header_link_gallery button::before, .header_link_gallery button::after{
+    content: '⭐';
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    right: 10px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.header_link_gallery button:hover::before,
+.header_link_gallery button:hover::after {
+    opacity: 1;
+}
+
 
 
 
