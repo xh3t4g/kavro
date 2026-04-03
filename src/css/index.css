@@ -356,6 +356,9 @@ header span {
     .card_services_list li {
         font-size: 15px;
     }
+    .header_link_gallery button {
+        font-size: 20px;
+    }
 }
 
 
