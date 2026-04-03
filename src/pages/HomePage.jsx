@@ -1,8 +1,9 @@
 import '../css/index.css'
 
 export function HomePage ({setCurrentPage}) {
+
     return <>
-    
+
     <header>
         <div className="header_container">
             <div className="header_text_container">
@@ -13,12 +14,6 @@ export function HomePage ({setCurrentPage}) {
                 </div>
 
                 <span>Услуги в твоем районе</span>
-            </div>
-
-            <div className="header_link_gallery">
-                <nav>  
-                    <button onClick={() => setCurrentPage('gallery')} >Галерея ›</button>
-                </nav>
             </div>
         </div>
     </header>
@@ -55,6 +50,12 @@ export function HomePage ({setCurrentPage}) {
                         <li>Мелкий ремонт</li>
                     </ul>
                 </div>
+            </div>
+
+            <div className="header_link_gallery">
+                <nav>  
+                    <button onClick={() => setCurrentPage('gallery')} >Наши работы</button>
+                </nav>
             </div>
 
             <div className="news">

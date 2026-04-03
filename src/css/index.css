@@ -76,37 +76,36 @@ header span {
     text-shadow: 0 0 30px rgba(0, 0, 0, 0.742);
 }
 
-
-
 .header_link_gallery {
-    position: absolute;
-    right: 10px;
-    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
 }
 
-.header_link_gallery:hover {
-    transform: scale(1.05);
-    transform: translateX(10px);
 
-}
 
 .header_link_gallery button{
     width: 100px;
     color: snow;
     text-decoration: none;
     background: linear-gradient(
-        135deg,
-        #238f2b,
-        #6ab634    
+        35deg,
+      #0a8c7a,
+      #1dbf9e
     );
-    padding: 5px 20px;
+    padding: 5px 30px;
     margin: 10px;
     border-radius: 5px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 600;
     width: fit-content;
     border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
 
+}
+
+.header_link_gallery button:hover {
+    transform: scale(1.05);
 }
 
 
